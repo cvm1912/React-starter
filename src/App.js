@@ -1,9 +1,13 @@
 import React from "react";
+import Card from "./Components/Card";
 
 function App() {
   return (  
-    <div className="App">
-      <h1 className="bg-red-200">Hello World</h1>
+    <div className="flex flex-wrap gap-5 bg-black p-10 justify-start">
+        <Card/>
+        <Card/>
+       <Card/>
+      
     </div>
   );
 }
