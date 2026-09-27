@@ -1,0 +1,17 @@
+[
+    { "id": 1, "src": "/imga.jpg", "alt": "Image A", "description": "A breathtaking view of the mountains at sunrise." },
+    { "id": 2, "src": "/imgb.jpg", "alt": "Image B", "description": "A serene beach with crystal clear blue water." },
+    { "id": 3, "src": "/imgc.jpg", "alt": "Image C", "description": "A lush green forest with sunlight filtering through the trees." },
+    { "id": 4, "src": "/imgd.jpg", "alt": "Image D", "description": "A stunning cityscape at night with glowing lights." },
+    { "id": 5, "src": "/imge.jpg", "alt": "Image E", "description": "A beautiful sunset over the ocean horizon." },
+    { "id": 6, "src": "/imgf.jpg", "alt": "Image F", "description": "A peaceful countryside with rolling green hills." },
+    { "id": 7, "src": "/imgh.jpg", "alt": "Image H", "description": "A colorful flower garden in full bloom." },
+    { "id": 8, "src": "/imgi.jpg", "alt": "Image I", "description": "A majestic waterfall surrounded by tropical greenery." },
+    { "id": 9, "src": "/imgj.jpg", "alt": "Image J", "description": "A snowy mountain peak under a clear blue sky." },
+    { "id": 10, "src": "/imgk.jpg", "alt": "Image K", "description": "A golden desert landscape with sand dunes." },
+    { "id": 11, "src": "/imgl.jpg", "alt": "Image L", "description": "A calm lake reflecting the surrounding mountains." },
+    { "id": 12, "src": "/imgm.jpg", "alt": "Image M", "description": "A vibrant autumn forest with red and orange leaves." },
+    { "id": 13, "src": "/imgn.jpg", "alt": "Image N", "description": "A historic architecture with stunning details." },
+    { "id": 14, "src": "/imgo.jpg", "alt": "Image O", "description": "A misty morning over a quiet river valley." },
+    { "id": 15, "src": "/imgp.jpg", "alt": "Image P", "description": "A starry night sky over a remote landscape." }
+]

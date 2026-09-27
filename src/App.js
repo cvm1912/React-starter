@@ -1,10 +1,9 @@
 import React from "react";
+import Galllary from "./Components/Gallary";
 
 function App() {
   return (  
-    <div className="App">
-      <h1 className="bg-red-200">Hello World</h1>
-    </div>
+    <Galllary/>
   );
 }
 
