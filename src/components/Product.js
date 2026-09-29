@@ -1,11 +1,31 @@
 import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
+import Loader from "./Loader";
 
 
 const initialState = true;
 
 function Product({products}) {
 
+    const [productList, setProductList] = useState([])
+    const { id, title, image, price } = productList[0] || {}
+    console.log(id, title, "product list")
+
+    async function fetchProducts(){
+        try{
+            const response = await fetch('https://fakestoreapi.com/products')
+            const data = await response.json()
+            if(data?.length) setProductList(data)
+        }catch(err){
+            console.log(err);
+        }
+    }
+
+    useEffect(()=>{
+        fetchProducts();
+    },[])
+
+    
     const [flag,setFlag]=useState(initialState);
 
     useEffect(()=>{
@@ -31,9 +51,13 @@ function Product({products}) {
             </div>
           
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 p-10">
-               {products.map(({id, title, price, image}) => (
+               {
+                productList.length > 0 ?
+                productList.map(({id, title, price, image}) => (
                     <ProductItem key={id} title={title} price={price} image={image}/>
-                ))}
+                )) :
+                Array.from({length: 8}).map((_, i) => <Loader key={i} />)
+                }
             </div>
         </div>
      );
