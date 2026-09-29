@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
 
 
@@ -7,6 +7,11 @@ const initialState = true;
 function Product({products}) {
 
     const [flag,setFlag]=useState(initialState);
+
+    useEffect(()=>{
+        setFlag(!flag)
+        console.log("runs only once")
+    },[])
 
 
     function handleToggleText(){
