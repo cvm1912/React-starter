@@ -1,9 +1,11 @@
 import React from "react";
+import FormComponent from "./Components/FormComponent";
 
 function App() {
   return (  
-    <div className="App">
-      <h1 className="bg-red-200">Hello World</h1>
+    <div className="text-center p-5">
+      <h1 className="text-2xl font-bold mb-4 tracking-tighter">Fill the form.</h1>
+      <FormComponent/>
     </div>
   );
 }
