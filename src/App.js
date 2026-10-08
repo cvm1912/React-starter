@@ -5,8 +5,20 @@ import Blogs from "./pages/Blogs";
 import Comments from "./pages/Comments";
 import Recipies from "./pages/Recipies";
 import RecipiesDetails from "./pages/Recipes-Details";
+import { useRoutes } from "react-router-dom";
 
 function App() {
+  function Routes(){
+     const element = useRoutes([
+       {path: '/', element: <Home/>},
+       {path: '/blogs', element: <Blogs/>},
+       {path: '/comments', element: <Comments/>},
+       {path: '/recipies', element: <Recipies/>},
+       {path: '/recipes-details/:id', element: <RecipiesDetails/>}
+     ])
+
+     return element;
+  }
   return (  
     <div className="App">
       <nav className="bg-white text-black p-4 flex justify-between items-center">
@@ -19,11 +31,7 @@ function App() {
         </div>
       </nav>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/blogs" element={<Blogs/>} />
-        <Route path="/comments" element={<Comments/>} />
-        <Route path="/recipies" element={<Recipies/>} />
-        <Route path="/recipes-details/:id" element={<RecipiesDetails/>} />
+        <Routes/>
       </Routes>
     </div>
   );
