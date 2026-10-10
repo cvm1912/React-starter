@@ -6,6 +6,8 @@ import Comments from "./pages/Comments";
 import Recipies from "./pages/Recipies";
 import RecipiesDetails from "./pages/Recipes-Details";
 import Form from "./pages/Form"
+import Hooks from "./pages/hooks";
+
 
 function App() {
   function Routes(){
@@ -15,7 +17,9 @@ function App() {
        {path: '/comments', element: <Comments/>},
        {path: '/recipies', element: <Recipies/>},
        {path: '/recipes-details/:id', element: <RecipiesDetails/>},
-       {path: '/form', element: <Form/>}
+       {path: '/form', element: <Form/>},
+       {path:'hooks', element: <Hooks/>},
+       
      ])
 
      return element;
@@ -30,11 +34,12 @@ function App() {
           <Link to="/comments" className="px-4 py-2 rounded hover:bg-gray-200">Comments</Link>
           <Link to="/recipies" className="px-4 py-2 rounded hover:bg-gray-200">Recipes</Link>
           <Link to="/form" className="px-4 py-2 rounded hover:bg-gray-200">Form</Link>
+          <Link to="/hooks" className="px-4 py-2 rounded hover:bg-gray-200">Hooks</Link>
+          
         </div>
       </nav>
       <Routes/>
     </div>
   );
 }
-
 export default App;
