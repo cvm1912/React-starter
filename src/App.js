@@ -1,11 +1,11 @@
 import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, useRoutes } from "react-router-dom";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
 import Comments from "./pages/Comments";
 import Recipies from "./pages/Recipies";
 import RecipiesDetails from "./pages/Recipes-Details";
-import { useRoutes } from "react-router-dom";
+import Form from "./pages/Form"
 
 function App() {
   function Routes(){
@@ -14,7 +14,8 @@ function App() {
        {path: '/blogs', element: <Blogs/>},
        {path: '/comments', element: <Comments/>},
        {path: '/recipies', element: <Recipies/>},
-       {path: '/recipes-details/:id', element: <RecipiesDetails/>}
+       {path: '/recipes-details/:id', element: <RecipiesDetails/>},
+       {path: '/form', element: <Form/>}
      ])
 
      return element;
@@ -28,11 +29,10 @@ function App() {
           <Link to="/blogs" className="px-4 py-2 rounded hover:bg-gray-200">Blogs</Link>
           <Link to="/comments" className="px-4 py-2 rounded hover:bg-gray-200">Comments</Link>
           <Link to="/recipies" className="px-4 py-2 rounded hover:bg-gray-200">Recipes</Link>
+          <Link to="/form" className="px-4 py-2 rounded hover:bg-gray-200">Form</Link>
         </div>
       </nav>
-      <Routes>
-        <Routes/>
-      </Routes>
+      <Routes/>
     </div>
   );
 }
