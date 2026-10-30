@@ -25,7 +25,7 @@ function Searchbar() {
   },[query])
 
     return (
-        <div className="w-full h-[10vh] flex items-center justify-center px-6 border-b border-zinc-700 relative">
+        <div className="w-full h-[10vh] flex items-center justify-center px-6 relative">
             <i className="text-3xl text-zinc-400 ri-search-2-line"></i>
             <input
                 className="w-[50%] mx-5 p-3 bg-transparent text-xl outline-none border-none text-white placeholder-zinc-500"
