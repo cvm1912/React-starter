@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Sidenav from '../../Components/templates/Sidenav'
 import Nav from '../../Components/templates/Nav'
 import axios from '../../utils/axios'
 import Searchbar from '../../Components/templates/Searchbar'
@@ -40,8 +39,7 @@ function Home(){
   console.log(wallpaper);
   return (
    <>
-     <Sidenav/>
-    <div className='w-[80%] h-full overflow-auto overflow-x-hidden'>
+    <div className='w-full h-full overflow-auto overflow-x-hidden'>
       <Nav/>
       <Headers data={wallpaper}/>
       {!trending ? <Loading /> : <Cards data={trending} func={setCategory} />}
