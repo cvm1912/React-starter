@@ -20,6 +20,7 @@ function Searchbar() {
     }
   }
 
+  // eslint-disable-next-line
   useEffect(()=>{
      getSearches();
   },[query])

@@ -19,6 +19,7 @@ function Tv() {
     }
   }
 
+  // eslint-disable-next-line
   useEffect(() => {
     getTv()
   }, [category])

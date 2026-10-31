@@ -35,6 +35,7 @@ function Trending() {
     }
   }
 
+  // eslint-disable-next-line
   useEffect(() => {
     setHasMore(true)
     getTrending(true)

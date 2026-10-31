@@ -19,6 +19,7 @@ function Movie() {
     }
   }
 
+  // eslint-disable-next-line
   useEffect(() => {
     getMovies()
   }, [category])

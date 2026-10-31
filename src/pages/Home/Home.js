@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Nav from '../../Components/templates/Nav'
 import axios from '../../utils/axios'
-import Searchbar from '../../Components/templates/Searchbar'
 import Headers from '../../Components/templates/Headers'
 import Cards from '../../Components/templates/Cards'
 import Loading from '../../Components/Loading'
@@ -31,6 +30,7 @@ function Home(){
   }
   
   
+  // eslint-disable-next-line
   useEffect(()=>{
     getHeaderWallpaper();
     getTrending();

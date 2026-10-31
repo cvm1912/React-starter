@@ -4,7 +4,6 @@ import axios from '../utils/axios'
 import Searchbar from "../Components/templates/Searchbar";
 import Dropdown from "../Components/templates/Dropdown";
 import VerticalCards from "../Components/templates/VerticalCards";
-import Loading from "../Components/Loading";
 
 function Popular() {
   const navigate = useNavigate()
@@ -20,6 +19,7 @@ function Popular() {
     }
   }
 
+  // eslint-disable-next-line
   useEffect(() => {
     getPopular()
   }, [category])
